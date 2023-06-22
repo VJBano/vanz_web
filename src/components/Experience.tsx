@@ -12,6 +12,7 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
+import resumePDF from '../assets/resume/RESUME-bano.pdf'
 
 // eslint-disable-next-line react-refresh/only-export-components
 const ExperienceCard = ({ experience }:any) => (
@@ -62,6 +63,15 @@ const Experience = () => {
       setIsHovered(false);
     };
 
+    const ResumeDownload = () => {
+
+          const link = document.createElement('a');
+          link.href = resumePDF;
+          link.download = 'BANO_resume.pdf'; 
+          link.click();
+        
+    }
+        
   return (
     <>
         <motion.div variants={textVariant(0.5)}>
@@ -110,22 +120,8 @@ const Experience = () => {
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
-              onClick={() =>
-                window.open(
-                  'resume link', //paste the link to your resume here
-                  '_blank'
-                )
-              }
-            //   onMouseOver={() => {
-            //     document
-            //       .querySelector('.download-btn')
-            //       .setAttribute('src', downloadHover);
-            //   }}
-            //   onMouseOut={() => {
-            //     document
-            //       .querySelector('.download-btn')
-            //       .setAttribute('src', download);
-            //   }}
+              onClick={() => ResumeDownload()}
+        
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
               >
