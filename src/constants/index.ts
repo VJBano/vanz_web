@@ -157,7 +157,7 @@ import {
       ],
       image: quiz_app,
       repo: 'https://github.com/VJBano/quiz_app',
-      demo: 'https://vjbano.github.io/quiz_app/',
+      demo: 'https://github.com/VJBano/quiz_app',
     },
     // {
     //   id: 'project-2',
