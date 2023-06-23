@@ -17,6 +17,7 @@ import {
     postgresql,
     quiz_app,
     vijaya,
+    sourceum
   } from '../assets';
   
   export const navLinks = [
@@ -112,13 +113,13 @@ import {
       iconBg: '#333333',
       date: 'Jul 2022 - Present',
     },
-    // {
-    //   title: 'Mentor (Volunteer)',
-    //   company_name: 'Microverse',
-    //   icon: microverse,
-    //   iconBg: '#333333',
-    //   date: 'Mar 2022 - May 2022',
-    // },
+    {
+      title: 'Research Assistant',
+      company_name: 'Sourceum Research',
+      icon: sourceum,
+      iconBg: '#333333',
+      date: 'Nov 2021 - Aug 2022',
+    },
     // {
     //   title: 'Junior Software Engineer',
     //   company_name: 'Kelhel',

@@ -36,7 +36,7 @@ import typescript from './tech/typescript.png';
 import postgresql from './tech/postgresql.png';
 
 import vijaya from './company/vijaya.png'
-
+import sourceum from './company/sourceum.png'
 import quiz_app from './projects/quiz_app.png'
 
 
@@ -75,4 +75,5 @@ export {
   typescript,
   quiz_app,
   vijaya,
+  sourceum
 };
