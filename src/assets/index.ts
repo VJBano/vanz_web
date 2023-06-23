@@ -37,7 +37,7 @@ import postgresql from './tech/postgresql.png';
 
 import vijaya from './company/vijaya.png'
 
-import soon from './projects/soon.png';
+import quiz_app from './projects/quiz_app.png'
 
 
 export {
@@ -73,6 +73,6 @@ export {
   redux,
   tailwind,
   typescript,
-  soon,
+  quiz_app,
   vijaya,
 };

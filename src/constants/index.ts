@@ -15,7 +15,7 @@ import {
     figma,
     docker,
     postgresql,
-    soon,
+    quiz_app,
     vijaya,
   } from '../assets';
   
@@ -138,8 +138,8 @@ import {
   const projects = [
     {
       id: 'project-1',
-      name: 'Soon',
-      description: 'Will release soon...',
+      name: 'Quiz App',
+      description: 'Provide a dynamic and a features in making quiz, this quiz app is under development. Mobile App version will be available soon...',
       tags: [
         {
           name: 'react',
@@ -154,9 +154,9 @@ import {
           color: 'pink-text-gradient',
         },
       ],
-      image: soon,
-      repo: 'https://github.com/VJBano',
-      demo: 'https://github.com/VJBano',
+      image: quiz_app,
+      repo: 'https://github.com/VJBano/quiz_app',
+      demo: 'https://vjbano.github.io/quiz_app/',
     },
     // {
     //   id: 'project-2',
