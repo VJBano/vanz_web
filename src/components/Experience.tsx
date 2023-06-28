@@ -65,10 +65,10 @@ const Experience = () => {
 
     const ResumeDownload = () => {
 
-          const link = document.createElement('a');
-          link.href = resumePDF;
-          link.download = 'BANO_resume.pdf'; 
-          link.click();
+          // const link = document.createElement('a');
+          // link.href = resumePDF;
+          // link.download = 'BANO_resume.pdf'; 
+          // link.click();
         
     }
         
