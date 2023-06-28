@@ -43,6 +43,10 @@ const Contact = () => {
 
     // sign up on emailjs.com (select the gmail service and connect your account).
     //click on create a new template then click on save.
+
+    if(form.email == "" || form.message == "" || form.name == "") {
+      alert('Provide All Information');
+    } else  {
     emailjs
       .send(
         'service_0qarrc2', // paste your ServiceID here (you'll get one when your service is created).
@@ -73,6 +77,7 @@ const Contact = () => {
           alert('Something went wrong. Please try again.');
         }
       );
+    }
   };
 
   return (
