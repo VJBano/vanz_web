@@ -12,7 +12,7 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
-import resumePDF from '../assets/resume/RESUME-bano.pdf'
+// import resumePDF from '../assets/resume/RESUME-bano.pdf'
 
 // eslint-disable-next-line react-refresh/only-export-components
 const ExperienceCard = ({ experience }:any) => (
