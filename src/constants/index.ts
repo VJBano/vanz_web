@@ -139,8 +139,8 @@ import {
   const projects = [
     {
       id: 'project-1',
-      name: 'Quiz App',
-      description: 'Provide a dynamic and a features in making quiz, this quiz app is under development. Mobile App version will be available soon...',
+      name: 'Quiz App Mobile',
+      description: 'A Quiz App for Mobile is an engaging and interactive application that allows users to test their knowledge, learn new facts, and have fun answering questions on various topics. With a user-friendly interface optimized for mobile devices, the app offers a diverse range of quizzes, including general knowledge, educational subjects, pop culture, and more. Users can select quizzes based on their interests, navigate through questions, submit answers, and receive instant feedback. The app enhances learning and entertainment by challenging users intellect while providing a seamless mobile experience. Whether its for educational purposes or casual enjoyment, the Quiz App for Mobile provides an enjoyable way to engage with quizzes anytime, anywhere.',
       tags: [
         {
           name: 'react',
