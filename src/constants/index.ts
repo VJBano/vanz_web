@@ -139,7 +139,7 @@ import {
   const projects = [
     {
       id: 'project-1',
-      name: 'Quiz App Mobile',
+      name: 'Quiz App',
       description: 'Provide a dynamic and a features in making quiz, this quiz app is under development. Mobile App version will be available soon...',
       tags: [
         {
