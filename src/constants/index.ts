@@ -17,7 +17,8 @@ import {
     postgresql,
     quiz_app,
     vijaya,
-    sourceum
+    sourceum,
+    qrcode
   } from '../assets';
   
   export const navLinks = [
@@ -159,29 +160,30 @@ import {
       repo: 'https://vjbano.github.io/quiz_app/',
       demo: 'https://vjbano.github.io/quiz_app/',
     },
-    // {
-    //   id: 'project-2',
-    //   name: 'Leaderboard',
-    //   description:
-    //     'A leaderboard list app that displays scores submitted by different players.',
-    //   tags: [
-    //     {
-    //       name: 'react',
-    //       color: 'blue-text-gradient',
-    //     },
-    //     {
-    //       name: 'restapi',
-    //       color: 'green-text-gradient',
-    //     },
-    //     {
-    //       name: 'scss',
-    //       color: 'pink-text-gradient',
-    //     },
-    //   ],
-    //   image: leaderboard,
-    //   repo: 'https://github.com/shaqdeff/Leaderboard',
-    //   demo: 'https://shaqdeff.github.io/Leaderboard/',
-    // },
+    
+    {
+      id: 'project-2',
+      name: 'QRCode Generator',
+      description:
+        'A QR Code Generator is a versatile tool that allows users to create customized QR codes effortlessly. This tool provides the convenient feature of generating QR codes that can be downloaded in PNG image format. Users can input various types of data, such as URLs, text, contact information, or even Wi-Fi network details, and the generator will instantly transform this data into a scannable QR code. Once generated, users can easily download the QR code as a PNG image file, making it suitable for a wide range of applications, including marketing materials, business cards, digital campaigns, and more. This user-friendly tool simplifies the process of creating and utilizing QR codes for enhancing engagement and information sharing.',
+      tags: [
+        {
+          name: 'react',
+          color: 'blue-text-gradient',
+        },
+        {
+          name: 'restapi',
+          color: 'green-text-gradient',
+        },
+        {
+          name: 'scss',
+          color: 'pink-text-gradient',
+        },
+      ],
+      image: qrcode,
+      repo: 'https://vjbano.github.io/QRCode-Generator/',
+      demo: 'https://vjbano.github.io/QRCode-Generator/',
+    },
     // {
     //   id: 'project-3',
     //   name: 'Math Magicians',
