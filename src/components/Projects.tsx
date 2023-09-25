@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import  { useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
@@ -22,6 +22,14 @@ const ProjectCard = ({
   }:any) => {
 
     const [isHovered, setIsHovered] = useState(false);
+    const [clicked, setClicked] = useState(0)
+
+    
+      console.log("click: ", clicked)
+    
+      // if(clicked == 1){
+      //   alert("Hello")
+      // }
 
   const handleMouseOver = () => {
     setIsHovered(true);
@@ -31,16 +39,27 @@ const ProjectCard = ({
     setIsHovered(false);
   };
 
+ 
+
 
   return (
     <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-    className={`relative ${
+    className={`relative  ${
       active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
     } flex items-center justify-center min-w-[170px] 
     h-[420px] cursor-pointer card-shadow`}
-    onClick={() => handleClick(id)}>
+    onClick={() => {
+      setClicked(clicked + 1)
+      if(clicked >= 2) {
+        handleClick('project-1')
+        setClicked(1)
+      } else {
+        handleClick(id)
+      }
+      }}>
     <div
+
       className="absolute top-0 left-0 z-10 bg-jetLight 
     h-full w-full opacity-[0.5] rounded-[24px]"></div>
 
@@ -63,6 +82,7 @@ const ProjectCard = ({
     ) : (
       <>
         <div
+         
           className="absolute bottom-0 p-8 justify-start w-full 
           flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
           <div className="absolute inset-0 flex justify-end m-3">
@@ -130,8 +150,8 @@ const ProjectCard = ({
 }
 
 const Projects = () => {
-    const [active, setActive] = useState('project-2');
-  
+    const [active, setActive] = useState('project-1');
+
     return (
       <div className="-mt-[6rem]">
         <motion.div variants={textVariant(0.1)}>
