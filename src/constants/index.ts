@@ -15,10 +15,13 @@ import {
     figma,
     docker,
     postgresql,
+    express,
+    mysql,
     quiz_app,
     vijaya,
     sourceum,
-    qrcode
+    qrcode,
+    go
   } from '../assets';
   
   export const navLinks = [
@@ -104,6 +107,18 @@ import {
       name: 'docker',
       icon: docker,
     },
+    {
+      name:"Express",
+      icon:express
+  },
+  {
+    name:"MySQL",
+    icon:mysql
+  },
+  {
+    name:"GoLang",
+    icon:go
+  }
   ];
   
   const experiences = [

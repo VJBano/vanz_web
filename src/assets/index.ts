@@ -34,6 +34,9 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import postgresql from './tech/postgresql.png';
+import mysql from './tech/mysql.png';
+import express from './tech/express.png';
+import go from './tech/go.png';
 
 import vijaya from './company/vijaya.png'
 import sourceum from './company/sourceum.png'
@@ -77,5 +80,9 @@ export {
   quiz_app,
   vijaya,
   sourceum,
-  qrcode
+  qrcode,
+  mysql,
+  express,
+  go
+
 };
