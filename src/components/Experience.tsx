@@ -12,7 +12,7 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
-import resumePDF from '../assets/resume/resume-updated.pdf'
+import resumePDF from '../assets/resume/resume-updated-2023.pdf'
 
 // eslint-disable-next-line react-refresh/only-export-components
 const ExperienceCard = ({ experience }:any) => (
@@ -67,7 +67,7 @@ const Experience = () => {
 
           const link = document.createElement('a');
           link.href = resumePDF;
-          link.download = 'bano_resume.pdf'; 
+          link.download = 'resume-updated-2023.pdf'; 
           link.click();
         
     }
