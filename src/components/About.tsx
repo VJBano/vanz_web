@@ -38,17 +38,24 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        "Difficult Roads Lead to Beautiful Destinations".
+        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px] font-RobotoRegular">
+          <p> <strong>"Difficult Roads Lead to Beautiful Destinations".</strong> </p>
+       
 
-            Hi! I'm Vincent Jay Bano, a Software Developer.
-        I graduated in Bohol Island State University - Candijay Campus with a degree of Bachelor of Science in Computer Science. 
-        I love facing challenging things or problems and finding a simple yet beautiful solution on it. 
-        And with that, I can't deny that I enjoy programming and coding wether it could be JavaScript, Go, PHP and more.
+          <p className='ml-5'>Hello! I'm Vincent Jay Bano, a dedicated FullStack Web Developer. </p> 
+          I proudly hold a degree in Bachelor of Science in Computer Science from Bohol Island State University - Candijay Campus. I find joy in taking on challenging problems and uncovering simple yet elegant solutions. Programming and coding are not just tasks for me; they are a passion. Whether it's JavaScript, Go, PHP, TypeScript, or more, I enjoy the art of turning code into functional and beautiful solutions.
 
-                I believe that every problem has it's solution that comes with a nice result. 
-            That's why I embraced in becoming a programmer and an efficient Junior Software Engineer, with the trainings and experiences that I undergone, 
-            undergoing and will undergo. Though programmers seem like introvert people but I am not. And I am looking forward to get along and work with you!
+My belief is simple: every problem has a solution, and it's often accompanied by a satisfying result. 
+This belief has driven me to embrace the role of a programmer and strive to be an efficient FullStack Web Developer. 
+My journey includes a blend of training and hands-on experiences, both past and ongoing, that continually shape my skills.
+
+In addition to my proficiency in JavaScript, Go, and PHP, I have a strong command of TypeScript, enriching my ability to build robust and scalable applications. 
+Docker is another tool in my arsenal, enabling me to streamline deployment processes and enhance software scalability. 
+When it comes to databases, I am well-versed in managing and optimizing both MySQL and PostgreSQL.
+
+Despite the stereotype of programmers being introverts, I break that mold. 
+I am enthusiastic about building connections, collaborating with like-minded individuals, and contributing to a dynamic work environment.
+ I look forward to getting along and working with you!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

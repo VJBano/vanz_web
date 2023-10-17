@@ -63,6 +63,8 @@ export default {
         overcameBold: ['Overcame Bold'],
         overcameOutline: ['Overcame Outline'],
         poppins: ['Poppins', 'sans-serif'],
+        RobotoRegular: ["RobotoRegular","sans-serif"],
+        RobotoMedium: ["RobotoMedium","sans-serif"],
       },
     },
   },
