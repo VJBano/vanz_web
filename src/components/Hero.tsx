@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 
-import { vincent, bwmap, worldmap } from '../assets';
+import { vincent, bwmap, worldmap, landscape } from '../assets';
 
 const Hero = () => {
   return (
@@ -71,7 +71,7 @@ const Hero = () => {
                   y: [0, 24, 0],
                 }}
                 transition={{
-                  duration: 1.5,
+                  duration: 1.0,
                   repeat: Infinity,
                   repeatType: 'loop',
                 }}

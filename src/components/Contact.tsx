@@ -41,9 +41,6 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // sign up on emailjs.com (select the gmail service and connect your account).
-    //click on create a new template then click on save.
-
     if(form.email == "" || form.message == "" || form.name == "") {
       alert('Provide All Information');
     } else  {
@@ -53,12 +50,12 @@ const Contact = () => {
         'template_nmfud0v', // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
-          to_name: 'Vincent Jay Bano', // put your name here.
+          to_name: 'Vincent Jay Bano',
           from_email: form.email,
-          to_email: 'vincentjaybano45@gmail.com', //put your email here.
+          to_email: 'vincentjaybano45@gmail.com', 
           message: form.message,
         },
-        'ZvD6gtp7Tim8RzxcV' //paste your Public Key here. You'll get it in your profile section.
+        'ZvD6gtp7Tim8RzxcV' 
       )
       .then(
         () => {

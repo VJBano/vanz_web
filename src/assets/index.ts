@@ -5,7 +5,7 @@ import worldmap from './backgrounds/world-map.png';
 
 import logo from './logo/logo-black.png';
 
-import vincent from './personal/vincent.png';
+import vincent from './personal/vincent.webp';
 
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';

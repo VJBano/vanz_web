@@ -7,21 +7,25 @@
 @font-face {
   font-family: 'Arenq';
   src: url('./fonts/arenq.otf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Mova';
   src: url('./fonts/mova.otf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Beckman';
   src: url('./fonts/beckman.otf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Overcame Bold';
   src: url('./fonts/overcame-bold.woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -39,6 +43,7 @@
 @font-face {
   font-family: 'Overcame Outline';
   src: url('./fonts/overcame-outline.woff');
+  font-display: swap;
 }
 
 * {

@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import  { useEffect, useState } from 'react';
+import  { useState } from 'react';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
@@ -23,13 +23,6 @@ const ProjectCard = ({
 
     const [isHovered, setIsHovered] = useState(false);
     const [clicked, setClicked] = useState(0)
-
-    
-      console.log("click: ", clicked)
-    
-      // if(clicked == 1){
-      //   alert("Hello")
-      // }
 
   const handleMouseOver = () => {
     setIsHovered(true);
@@ -120,16 +113,6 @@ const ProjectCard = ({
             hover:text-eerieBlack transition duration-[0.2s] 
             ease-in-out"
             onClick={() => window.open(demo, '_blank')}
-            // onMouseOver={() => {
-            //   document
-            //     .querySelector('.btn-icon')
-            //     .setAttribute('src', pineappleHover);
-            // }}
-            // onMouseOut={() => {
-            //   document
-            //     .querySelector('.btn-icon')
-            //     .setAttribute('src', pineapple);
-            // }}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
 
