@@ -35,7 +35,6 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px] font-RobotoRegular flex flex-col">
-          <strong>"Difficult Roads Lead to Beautiful Destinations."</strong>
           Hello! I'm Vincent Jay Bano, a dedicated FullStack Web Developer.
           I proudly hold a degree in Bachelor of Science in Computer Science from Bohol Island State University - Candijay Campus. I find joy in taking on challenging problems and uncovering simple yet elegant solutions. Programming and coding are not just tasks for me; they are a passion. Whether it's JavaScript, Go, PHP, TypeScript, or more, I enjoy the art of turning code into functional and beautiful solutions.
 
