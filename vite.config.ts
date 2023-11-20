@@ -7,5 +7,8 @@ export default defineConfig({
   plugins: [react(),
     compression()
   ],
+  server: {
+    host:true
+  },
   base:"/vanz_web/"
 })

@@ -42,13 +42,6 @@ My belief is simple: every problem has a solution, and it's often accompanied by
 This belief has driven me to embrace the role of a programmer and strive to be an efficient FullStack Web Developer. 
 My journey includes a blend of training and hands-on experiences, both past and ongoing, that continually shape my skills.
 
-In addition to my proficiency in JavaScript, Go, and PHP, I have a strong command of TypeScript, enriching my ability to build robust and scalable applications. 
-Docker is another tool in my arsenal, enabling me to streamline deployment processes and enhance software scalability. 
-When it comes to databases, I am well-versed in managing and optimizing both MySQL and PostgreSQL.
-
-Despite the stereotype of programmers being introverts, I break that mold. 
-I am enthusiastic about building connections, collaborating with like-minded individuals, and contributing to a dynamic work environment.
- I look forward to getting along and working with you!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

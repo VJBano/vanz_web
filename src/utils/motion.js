@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-export const textVariant = (delay:any) => {
+export const textVariant = (delay) => {
     return {
       hidden: {
         y: -50,
@@ -18,7 +18,7 @@ export const textVariant = (delay:any) => {
     };
   };
 
-  export const fadeIn = (direction:any, type:any, delay:any, duration:any) => {
+  export const fadeIn = (direction, type, delay, duration) => {
     return {
       hidden: {
         x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
@@ -39,7 +39,7 @@ export const textVariant = (delay:any) => {
     };
   };
 
-  export const zoomIn = (delay:any, duration:any) => {
+  export const zoomIn = (delay, duration) => {
     return {
       hidden: {
         scale: 0,
@@ -58,7 +58,7 @@ export const textVariant = (delay:any) => {
     };
   };
 
-  export const slideIn = (direction:any, type:any, delay:any, duration:any) => {
+  export const slideIn = (direction, type, delay, duration) => {
     return {
       hidden: {
         x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
@@ -77,7 +77,7 @@ export const textVariant = (delay:any) => {
     };
   };
 
-  export const staggerContainer = (staggerChildren:any, delayChildren:any) => {
+  export const staggerContainer = (staggerChildren, delayChildren) => {
     return {
       hidden: {},
       show: {

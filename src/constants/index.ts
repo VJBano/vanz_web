@@ -21,6 +21,7 @@ import {
     vijaya,
     sourceum,
     qrcode,
+    pos,
     go
   } from '../assets';
   
@@ -127,7 +128,7 @@ import {
       company_name: 'Vijaya Technologies Inc',
       icon: vijaya,
       iconBg: '#333333',
-      date: 'Jul 2022 - Present',
+      date: 'Jul 2022 - Aug 2023',
     },
     {
       title: 'Research Assistant',
@@ -156,7 +157,7 @@ import {
     {
       id: 'project-1',
       name: 'Quiz App Mobile',
-      description: 'A Quiz App for Mobile is an engaging and interactive application that allows users to test their knowledge, learn new facts, and have fun answering questions on various topics. With a user-friendly interface optimized for mobile devices, the app offers a diverse range of quizzes, including general knowledge, educational subjects, pop culture, and more. Users can select quizzes based on their interests, navigate through questions, submit scores. The app enhances learning and entertainment by challenging users intellect while providing a seamless mobile experience.',
+      description: 'A Quiz App for Mobile is an engaging and interactive application that allows users to test their knowledge, learn new facts, and have fun answering questions on various topics.',
       tags: [
         {
           name: 'react',
@@ -180,7 +181,7 @@ import {
       id: 'project-2',
       name: 'QRCode Generator',
       description:
-        'A QR Code Generator is a versatile tool that allows users to create customized QR codes effortlessly. This tool provides the convenient feature of generating QR codes that can be downloaded in PNG image format. Users can input various types of data, such as URLs, text, contact information, or even Wi-Fi network details, and the generator will instantly transform this data into a scannable QR code. Once generated, users can easily download the QR code as a PNG image file, making it suitable for a wide range of applications, including marketing materials, business cards, digital campaigns, and more. This user-friendly tool simplifies the process of creating and utilizing QR codes for enhancing engagement and information sharing.',
+        'A QR Code Generator is a versatile tool that allows users to create customized QR codes effortlessly.',
       tags: [
         {
           name: 'react',
@@ -199,28 +200,28 @@ import {
       repo: 'https://vjbano.github.io/QRCode-Generator/',
       demo: 'https://vjbano.github.io/QRCode-Generator/',
     },
-    // {
-    //   id: 'project-3',
-    //   name: 'Math Magicians',
-    //   description: 'This is a single-page calculator app built with React',
-    //   tags: [
-    //     {
-    //       name: 'nextjs',
-    //       color: 'blue-text-gradient',
-    //     },
-    //     {
-    //       name: 'supabase',
-    //       color: 'green-text-gradient',
-    //     },
-    //     {
-    //       name: 'css',
-    //       color: 'pink-text-gradient',
-    //     },
-    //   ],
-    //   image: math,
-    //   repo: 'https://github.com/shaqdeff/Math-Magicians',
-    //   demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
-    // },
+    {
+      id: 'project-3',
+      name: 'Mobile POS',
+      description: 'A mobile Point of Sale (POS) system with a barcode scanner offers efficient and streamlined product and stock management for businesses.',
+      tags: [
+        {
+          name: 'react-native',
+          color: 'blue-text-gradient',
+        },
+        {
+          name: 'sqlite',
+          color: 'green-text-gradient',
+        },
+        {
+          name: 'expo',
+          color: 'pink-text-gradient',
+        },
+      ],
+      image: pos,
+      repo: 'https://github.com/VJBano/POS',
+      demo: 'https://github.com/VJBano/POS',
+    },
     // {
     //   id: 'project-4',
     //   name: 'Movie Metro',

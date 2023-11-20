@@ -42,6 +42,7 @@ import vijaya from './company/vijaya.png'
 import sourceum from './company/sourceum.png'
 import quiz_app from './projects/quiz_app.png'
 import qrcode from './projects/qrcode.png'
+import pos from './projects/POS.png'
 
 
 export {
@@ -81,6 +82,7 @@ export {
   vijaya,
   sourceum,
   qrcode,
+  pos,
   mysql,
   express,
   go
