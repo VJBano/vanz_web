@@ -44,8 +44,30 @@ import quiz_app from './projects/quiz_app.png'
 import qrcode from './projects/qrcode.png'
 import pos from './projects/POS.png'
 
+import BANO1 from './certificate/BANO-1.png'
+import BANO2 from './certificate/BANO-2.png'
+import BANO3 from './certificate/BANO-3.png'
+import BANO4 from './certificate/BANO-4.png'
+import BANO6 from './certificate/BANO-6.png'
+import BANO from './certificate/BANO.png'
+import UDEMY from './certificate/udemy.png'
+import SKILLUP1 from './certificate/skillUP.png'
+import SKILLUP2 from './certificate/SkillUP-2.png'
 
 export {
+
+  BANO,
+  BANO1,
+  BANO2,
+  BANO3,
+  BANO4,
+  BANO6,
+  UDEMY,
+  SKILLUP1,
+  SKILLUP2,
+
+
+
   bwmap,
   landscape,
   whiteabstract,

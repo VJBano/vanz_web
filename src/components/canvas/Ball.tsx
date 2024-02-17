@@ -5,12 +5,13 @@ import {
     Decal,
     Float,
     OrbitControls,
+    PerformanceMonitor,
     Preload,
     useTexture,
   } from '@react-three/drei';
 
 import Loader from '../Loader';
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 
 const Ball = (props:any) => {
 
@@ -41,14 +42,23 @@ const Ball = (props:any) => {
 
 const BallCanvas = ({ icon }:any) => {
 
+  const [dpr, setDpr] = useState(1.5)
+  
     return (
-      <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
+      <Canvas frameloop="always"
+      // shadows
+      // camera={{position: [20, 3, 5]}}
+      // resize={{scroll:false}}
+      dpr={dpr}
+      gl={{preserveDrawingBuffer: true, alpha: true}}>
+         <PerformanceMonitor onIncline={() => setDpr(2)} onDecline={() => setDpr(1)} >
         <Suspense fallback={<Loader />}>
           <OrbitControls enableZoom={false} enableRotate={true} position={0} />
           <Ball imgUrl={icon} />
         </Suspense>
   
         <Preload all />
+        </PerformanceMonitor>
       </Canvas>
     );
   };

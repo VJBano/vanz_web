@@ -1,7 +1,9 @@
 
 import { BrowserRouter } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
-import Spinner from './components/spinner';
+import Spinner from './components/spinner'
+
+
 
 const App = () => {
 
@@ -12,6 +14,7 @@ const App = () => {
   const NAVBAR = lazy(() => import("./components/Navbar"));
   const TECH = lazy(() => import("./components/Tech"));
   const PROJECT = lazy(() => import("./components/Projects"));
+  const CERTIFICATE = lazy(() => import("./components/Certificate"));
   return (
     <BrowserRouter>
     <Suspense fallback={<Spinner/>}>
@@ -28,6 +31,12 @@ const App = () => {
       <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
         <TECH />
       </div>
+
+      <div className="flex pt-10 justify-center bg-about  bg-cover bg-center bg-no-repeat pb-10">
+      <CERTIFICATE />
+      </div>
+
+      
 
       <PROJECT />
 
