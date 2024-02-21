@@ -32,6 +32,7 @@ import {
   UDEMY,
   SKILLUP1,
   SKILLUP2,
+  ems
 } from "../assets";
 
 export const certificate = [
@@ -243,28 +244,28 @@ const projects = [
     repo: "https://github.com/VJBano/POS",
     demo: "https://github.com/VJBano/POS",
   },
-  // {
-  //   id: 'project-4',
-  //   name: 'Movie Metro',
-  //   description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-  //   tags: [
-  //     {
-  //       name: 'nextjs',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'supabase',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'css',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: movie,
-  //   repo: 'https://github.com/shaqdeff/Movie-Metro',
-  //   demo: 'https://movie-metro.netlify.app/',
-  // },
+  {
+    id: 'project-4',
+    name: 'EMS',
+    description: `"Enrollment Management System" Experience seamless enrollment management with our cutting-edge system built on React with Material-UI. Our innovative platform offers intuitive user interfaces, empowering administrators to efficiently manage enrollments, track student progress, and streamline administrative tasks. `,
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: ems,
+    repo: 'https://github.com/VJBano/Enrollment-Management-System',
+    demo: 'https://github.com/VJBano/Enrollment-Management-System',
+  },
   // {
   //   id: 'project-5',
   //   name: 'Nyeusi Fest Site',

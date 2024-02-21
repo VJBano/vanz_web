@@ -43,6 +43,7 @@ import sourceum from './company/sourceum.png'
 import quiz_app from './projects/quiz_app.png'
 import qrcode from './projects/qrcode.png'
 import pos from './projects/POS.png'
+import ems from './projects/EMS.webp'
 
 import BANO1 from './certificate/BANO-1.webp'
 import BANO2 from './certificate/BANO-2.webp'
@@ -105,6 +106,7 @@ export {
   sourceum,
   qrcode,
   pos,
+  ems,
   mysql,
   express,
   go
