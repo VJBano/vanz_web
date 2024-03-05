@@ -7,6 +7,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ index, title, icon }:any) => {
+
     return (
       <motion.div
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}

@@ -247,7 +247,7 @@ const projects = [
   {
     id: 'project-4',
     name: 'EMS',
-    description: `"Enrollment Management System" Experience seamless enrollment management with our cutting-edge system built on React with Material-UI. Our innovative platform offers intuitive user interfaces, empowering administrators to efficiently manage enrollments, track student progress, and streamline administrative tasks. `,
+    description: `"Enrollment Management System" Experience seamless enrollment management with our cutting-edge system built on React with Material-UI. Our innovative platform offers intuitive user interfaces, empowering administrators to efficiently manage enrollments and streamline administrative tasks. `,
     tags: [
       {
         name: 'nextjs',

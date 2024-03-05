@@ -11,7 +11,7 @@ import {
   } from '@react-three/drei';
 
 import Loader from '../Loader';
-import { Suspense, useState } from 'react';
+import { Suspense, lazy, useState } from 'react';
 
 const Ball = (props:any) => {
 

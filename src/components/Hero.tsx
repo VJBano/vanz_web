@@ -3,24 +3,38 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 
-import { vincent, bwmap, worldmap, landscape } from '../assets';
+import { vincent, bwmap, worldmap } from '../assets';
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Hero = () => {
   return (
     <>
         <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
-        <img
+
+        <LazyLoadImage src={bwmap}
+        // width={600} height={400}
+        
+        alt="world map"
+          className="w-full h-full sm:block hidden object-cover"
+      />
+
+        {/* <img
           src={bwmap}
           alt="world map"
           className="w-full h-full sm:block hidden object-cover"
-        />
+        /> */}
       </div>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
-        <img
+      <LazyLoadImage src={worldmap}
+        alt="world map"
+          className="w-full h-full sm:hidden block object-cover"
+      />
+        {/* <img
           src={worldmap}
           alt="world map"
           className="w-full h-full sm:hidden block object-cover"
-        />
+        /> */}
       </div>
       <section
         className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
@@ -51,11 +65,9 @@ const Hero = () => {
               
             </p>
           </div>
-          <div
-            className="w-screen flex flex-col items-start 
-            justify-center sm:-ml-[3rem] xxs:mt-4"></div>
+          
 
-          <div></div>
+          
         </div>
 
         <div
@@ -71,7 +83,7 @@ const Hero = () => {
                   y: [0, 24, 0],
                 }}
                 transition={{
-                  duration: 1.0,
+                  duration: 2,
                   repeat: Infinity,
                   repeatType: 'loop',
                 }}
@@ -83,13 +95,21 @@ const Hero = () => {
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
         <div>
-          <img
+
+        <LazyLoadImage src={vincent}
+        // width={600} height={400}
+        alt="vincent"
+        className="absolute bottom-0 ml-[50vw] 
+        lg:ml-[65vw] md:ml-[60vw] xmd:ml-[50vw] 2xl:ml-[73vw]
+        sm:h-[0vh] md:h-[70vh] xl:h-[80vh]"
+      />
+          {/* <img
             className="absolute bottom-0 ml-[50vw] 
             lg:ml-[65vw] md:ml-[60vw] xmd:ml-[50vw] 2xl:ml-[73vw]
             sm:h-[0vh] md:h-[70vh] xl:h-[80vh]"
             src={vincent}
             alt="vincent"
-          />
+          /> */}
         </div>
       </section>
     </>
