@@ -32,9 +32,9 @@ const App = () => {
         <TECH />
       </div>
 
-      {/* <div className="flex pt-10 justify-center bg-about  bg-cover bg-center bg-no-repeat pb-10">
+      <div className="flex pt-10 justify-center bg-about  bg-cover bg-center bg-no-repeat pb-10">
       <CERTIFICATE />
-      </div> */}
+      </div>
 
       
 

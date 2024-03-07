@@ -8,7 +8,7 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Contact = () => {
@@ -55,7 +55,7 @@ const Contact = () => {
           to_email: 'vincentjaybano45@gmail.com', 
           message: form.message,
         },
-        'ZvD6gtp7Tim8RzxcV' 
+        'V15d_l2X-KzMzFQUp' 
       )
       .then(
         () => {
@@ -158,12 +158,20 @@ const Contact = () => {
             onMouseOut={handleMouseOut}
             >
             {loading ? 'Sending' : 'Send'}
-            <img
+
+            <LazyLoadImage
+                src={isHovered ? sendHover : send}
+                alt="send"
+                className="contact-btn sm:w-[26px] sm:h-[26px] 
+                w-[23px] h-[23px] object-contain"
+                loading="lazy"
+              />
+            {/* <img
               src={isHovered ? sendHover : send}
               alt="send"
               className="contact-btn sm:w-[26px] sm:h-[26px] 
               w-[23px] h-[23px] object-contain"
-            />
+            /> */}
           </button>
         </form>
       </motion.div>
