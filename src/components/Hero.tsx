@@ -81,7 +81,7 @@ const Hero = () => {
           flex justify-center items-center"
         >
           <a href="#about">
-            <div
+            {/* <div
               className="w-[35px] h-[64px] rounded-3xl border-4 
              border-dim flex
             justify-center items-start p-2">
@@ -96,9 +96,9 @@ const Hero = () => {
                 }}
                 className="w-3 h-3 rounded-full bg-taupe mb-1"
               />
-            </div>
+            </div> */}
 
-            {/* <svg
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="3em"
               height="3em"
@@ -118,7 +118,7 @@ const Hero = () => {
                   values="0 12 12;180 12 12;360 12 12"
                 />
               </g>
-            </svg> */}
+            </svg>
           </a>
         </div>
 
