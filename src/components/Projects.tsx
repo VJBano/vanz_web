@@ -6,6 +6,7 @@ import { github, pineapple, pineappleHover } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import ImageLoader from "./ImageLoader";
 
 const ProjectCard = ({
   id,
@@ -18,6 +19,12 @@ const ProjectCard = ({
   active,
   handleClick,
 }) => {
+  const [loading, setLoading] = useState(true);
+
+  const handleLoad = () => {
+    setLoading(false);
+  };
+
   return (
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -32,11 +39,13 @@ const ProjectCard = ({
       h-full w-full opacity-[0.5] rounded-[24px]"
       ></div>
 
+      {loading && <ImageLoader />}
       <LazyLoadImage
         src={image}
         alt={name}
         className="absolute w-full h-full object-cover rounded-[24px]"
         loading="lazy"
+        onLoad={handleLoad}
       />
 
       {/* <img
@@ -119,9 +128,9 @@ const ProjectCard = ({
               }}
             >
               <LazyLoadImage
-                 src={pineapple}
-                 alt="pineapple"
-                 className="btn-icon sm:w-[34px] sm:h-[34px] 
+                src={pineapple}
+                alt="pineapple"
+                className="btn-icon sm:w-[34px] sm:h-[34px] 
                    w-[30px] h-[30px] object-contain"
                 loading="lazy"
               />

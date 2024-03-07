@@ -6,8 +6,17 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useState } from "react";
+import ImageLoader from "./ImageLoader";
 
 const ServiceCard = ({ index, title, icon }: any) => {
+
+  const [loading, setLoading] = useState(true);
+  
+  const handleLoad = () => {
+    setLoading(false);
+  };
+  
   return (
     <motion.div
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
@@ -15,11 +24,13 @@ const ServiceCard = ({ index, title, icon }: any) => {
     >
       <div className="bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         {/* <img src={icon} alt={title} className="w-16 h-16 object-contain" /> */}
+        {loading && <ImageLoader />}
         <LazyLoadImage
           src={icon}
           alt={title}
           className="w-16 h-16 object-contain"
           loading="lazy"
+          onLoad={handleLoad}
         />
         <h3 className="text-taupe text-[18px] font-bold text-center">
           {title}

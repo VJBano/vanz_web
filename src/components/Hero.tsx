@@ -74,7 +74,7 @@ const Hero = () => {
           className="absolute xs:bottom-10 bottom-32 w-full 
           flex justify-center items-center">
           <a href="#about">
-            <div
+            {/* <div
               className="w-[35px] h-[64px] rounded-3xl border-4 
              border-dim flex
             justify-center items-start p-2">
@@ -89,7 +89,9 @@ const Hero = () => {
                 }}
                 className="w-3 h-3 rounded-full bg-taupe mb-1"
               />
-            </div>
+            </div> */}
+
+<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="white"/><g><circle cx="4" cy="12" r="3" fill="white"/><circle cx="20" cy="12" r="3" fill="white"/><animateTransform attributeName="transform" calcMode="spline" dur="1.3s" keySplines=".36,.6,.31,1;.36,.6,.31,1" repeatCount="indefinite" type="rotate" values="0 12 12;180 12 12;360 12 12"/></g></svg>
           </a>
         </div>
 
