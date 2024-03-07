@@ -71,10 +71,12 @@ const Experience = () => {
   };
 
   const ResumeDownload = () => {
-    const link = document.createElement("a");
-    link.href = resumePDF;
-    link.download = "resume-updated-2023.pdf";
-    link.click();
+
+    alert("To download my resume, contact me first.")
+    // const link = document.createElement("a");
+    // link.href = resumePDF;
+    // link.download = "resume-updated-2023.pdf";
+    // link.click();
   };
 
   return (
