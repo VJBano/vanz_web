@@ -32,7 +32,8 @@ import {
   UDEMY,
   SKILLUP1,
   SKILLUP2,
-  ems
+  ems,
+  dms
 } from "../assets";
 
 export const certificate = [
@@ -266,29 +267,30 @@ const projects = [
     repo: 'https://github.com/VJBano/Enrollment-Management-System',
     demo: 'https://github.com/VJBano/Enrollment-Management-System',
   },
-  // {
-  //   id: 'project-5',
-  //   name: 'Nyeusi Fest Site',
-  //   description:
-  //     'This is a demo concert website for a music festival called Nyeusi.',
-  //   tags: [
-  //     {
-  //       name: 'nextjs',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'supabase',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'css',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: nyeusi,
-  //   repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-  //   demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
-  // },
+  {
+    id: 'project-5',
+    name: 'DOCS_MS',
+    description:
+      `Introducing my cutting-edge document management system, 
+       My platform combines intuitive file upload capabilities with advanced features like real-time notifications and tracking of seen and received files, ensuring seamless collaboration and efficient document handling.`,
+    tags: [
+      {
+        name: 'react-ts',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'express-tsnode',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwindcss',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: dms,
+    repo: 'https://github.com/VJBano/DOCS_MS',
+    demo: 'https://github.com/VJBano/DOCS_MS',
+  },
 ];
 
 export { services, technologies, experiences, projects };
