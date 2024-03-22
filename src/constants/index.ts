@@ -33,7 +33,8 @@ import {
   SKILLUP1,
   SKILLUP2,
   ems,
-  dms
+  dms,
+  freelance
 } from "../assets";
 
 export const certificate = [
@@ -145,6 +146,13 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Freelancer",
+    company_name: "",
+    icon: freelance,
+    iconBg: "#333333",
+    date: "Aug 2023 - Present",
+  },
+  {
     title: "Junior Software Engineer",
     company_name: "Vijaya Technologies Inc",
     icon: vijaya,
@@ -158,20 +166,8 @@ const experiences = [
     iconBg: "#333333",
     date: "Nov 2021 - Aug 2022",
   },
-  // {
-  //   title: 'Junior Software Engineer',
-  //   company_name: 'Kelhel',
-  //   icon: kelhel,
-  //   iconBg: '#333333',
-  //   date: 'May 2022 - Oct 2022',
-  // },
-  // {
-  //   title: 'Full Stack Developer',
-  //   company_name: 'Diversity Cyber Council',
-  //   icon: dcc,
-  //   iconBg: '#333333',
-  //   date: 'Sep 2022 - Present',
-  // },
+  
+  
 ];
 
 const projects = [

@@ -40,6 +40,9 @@ import go from './tech/go.png';
 
 import vijaya from './company/vijaya.png'
 import sourceum from './company/sourceum.png'
+import freelance from './company/freelance.png'
+
+
 import quiz_app from './projects/quiz_app.png'
 import qrcode from './projects/qrcode.png'
 import pos from './projects/POS.png'
@@ -67,8 +70,6 @@ export {
   UDEMY,
   SKILLUP1,
   SKILLUP2,
-
-
 
   bwmap,
   landscape,
@@ -111,6 +112,7 @@ export {
   dms,
   mysql,
   express,
-  go
+  go,
+  freelance
 
 };
