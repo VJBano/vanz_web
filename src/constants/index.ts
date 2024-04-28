@@ -34,7 +34,8 @@ import {
   SKILLUP2,
   ems,
   dms,
-  freelance
+  freelance,
+  CyberSecurity,
 } from "../assets";
 
 export const certificate = [
@@ -46,6 +47,7 @@ export const certificate = [
   { title: "Introduction to Data Analytics", img: SKILLUP1 },
   { title: "Agile Scrum Foundation", img: SKILLUP2 },
   { title: "Building Modern Web Applications with Go", img: UDEMY },
+  { title: "Foundations of Cybersecurity", img: CyberSecurity },
 ];
 export const navLinks = [
   {
@@ -166,8 +168,6 @@ const experiences = [
     iconBg: "#333333",
     date: "Nov 2021 - Aug 2022",
   },
-  
-  
 ];
 
 const projects = [
@@ -242,50 +242,49 @@ const projects = [
     demo: "https://github.com/VJBano/POS",
   },
   {
-    id: 'project-4',
-    name: 'EMS',
+    id: "project-4",
+    name: "EMS",
     description: `"Enrollment Management System" Experience seamless enrollment management with our cutting-edge system built on React with Material-UI. Our innovative platform offers intuitive user interfaces, empowering administrators to efficiently manage enrollments and streamline administrative tasks. `,
     tags: [
       {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
+        name: "nextjs",
+        color: "blue-text-gradient",
       },
       {
-        name: 'supabase',
-        color: 'green-text-gradient',
+        name: "supabase",
+        color: "green-text-gradient",
       },
       {
-        name: 'css',
-        color: 'pink-text-gradient',
+        name: "css",
+        color: "pink-text-gradient",
       },
     ],
     image: ems,
-    repo: 'https://github.com/VJBano/Enrollment-Management-System',
-    demo: 'https://github.com/VJBano/Enrollment-Management-System',
+    repo: "https://github.com/VJBano/Enrollment-Management-System",
+    demo: "https://github.com/VJBano/Enrollment-Management-System",
   },
   {
-    id: 'project-5',
-    name: 'DOCS_MS',
-    description:
-      `Introducing my cutting-edge document management system, 
+    id: "project-5",
+    name: "DOCS_MS",
+    description: `Introducing my cutting-edge document management system, 
        My platform combines intuitive file upload capabilities with advanced features like real-time notifications and tracking of seen and received files, ensuring seamless collaboration and efficient document handling.`,
     tags: [
       {
-        name: 'react-ts',
-        color: 'blue-text-gradient',
+        name: "react-ts",
+        color: "blue-text-gradient",
       },
       {
-        name: 'express-tsnode',
-        color: 'green-text-gradient',
+        name: "express-tsnode",
+        color: "green-text-gradient",
       },
       {
-        name: 'tailwindcss',
-        color: 'pink-text-gradient',
+        name: "tailwindcss",
+        color: "pink-text-gradient",
       },
     ],
     image: dms,
-    repo: 'https://github.com/VJBano/DOCS_MS',
-    demo: 'https://github.com/VJBano/DOCS_MS',
+    repo: "https://github.com/VJBano/DOCS_MS",
+    demo: "https://github.com/VJBano/DOCS_MS",
   },
 ];
 
