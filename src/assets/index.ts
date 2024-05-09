@@ -58,6 +58,7 @@ import UDEMY from "./certificate/udemy.webp";
 import SKILLUP1 from "./certificate/skillUP.webp";
 import SKILLUP2 from "./certificate/SkillUP-2.webp";
 import CyberSecurity from "./certificate/cyber.webp";
+import UXdesign from "./certificate/UX.webp";
 export {
   BANO,
   BANO1,
@@ -112,4 +113,5 @@ export {
   express,
   go,
   freelance,
+  UXdesign,
 };

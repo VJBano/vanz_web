@@ -36,6 +36,7 @@ import {
   dms,
   freelance,
   CyberSecurity,
+  UXdesign,
 } from "../assets";
 
 export const certificate = [
@@ -48,6 +49,7 @@ export const certificate = [
   { title: "Agile Scrum Foundation", img: SKILLUP2 },
   { title: "Building Modern Web Applications with Go", img: UDEMY },
   { title: "Foundations of Cybersecurity", img: CyberSecurity },
+  { title: "Foundations of User Experience (UX) Design", img: UXdesign },
 ];
 export const navLinks = [
   {
