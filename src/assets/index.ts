@@ -59,6 +59,7 @@ import SKILLUP1 from "./certificate/skillUP.webp";
 import SKILLUP2 from "./certificate/SkillUP-2.webp";
 import CyberSecurity from "./certificate/cyber.webp";
 import UXdesign from "./certificate/UX.webp";
+import jiracourse from "./certificate/jira_course.webp";
 export {
   BANO,
   BANO1,
@@ -114,4 +115,5 @@ export {
   go,
   freelance,
   UXdesign,
+  jiracourse,
 };

@@ -37,6 +37,7 @@ import {
   freelance,
   CyberSecurity,
   UXdesign,
+  jiracourse,
 } from "../assets";
 
 export const certificate = [
@@ -50,6 +51,7 @@ export const certificate = [
   { title: "Building Modern Web Applications with Go", img: UDEMY },
   { title: "Foundations of Cybersecurity", img: CyberSecurity },
   { title: "Foundations of User Experience (UX) Design", img: UXdesign },
+  { title: "Automate tasks and processes with Jira", img: jiracourse },
 ];
 export const navLinks = [
   {
