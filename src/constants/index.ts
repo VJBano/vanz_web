@@ -38,6 +38,7 @@ import {
   CyberSecurity,
   UXdesign,
   jiracourse,
+  dynamicInterfaces,
 } from "../assets";
 
 export const certificate = [
@@ -52,6 +53,10 @@ export const certificate = [
   { title: "Foundations of Cybersecurity", img: CyberSecurity },
   { title: "Foundations of User Experience (UX) Design", img: UXdesign },
   { title: "Automate tasks and processes with Jira", img: jiracourse },
+  {
+    title: "Dynamic User Interfaces (UI) for Websites",
+    img: dynamicInterfaces,
+  },
 ];
 export const navLinks = [
   {

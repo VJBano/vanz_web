@@ -60,6 +60,7 @@ import SKILLUP2 from "./certificate/SkillUP-2.webp";
 import CyberSecurity from "./certificate/cyber.webp";
 import UXdesign from "./certificate/UX.webp";
 import jiracourse from "./certificate/jira_course.webp";
+import dynamicInterfaces from "./certificate/dynamic_userinterfaces.webp";
 export {
   BANO,
   BANO1,
@@ -116,4 +117,5 @@ export {
   freelance,
   UXdesign,
   jiracourse,
+  dynamicInterfaces,
 };
