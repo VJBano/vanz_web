@@ -39,6 +39,7 @@ import {
   UXdesign,
   jiracourse,
   dynamicInterfaces,
+  datascience,
 } from "../assets";
 
 export const certificate = [
@@ -57,6 +58,7 @@ export const certificate = [
     title: "Dynamic User Interfaces (UI) for Websites",
     img: dynamicInterfaces,
   },
+  { title: "Foundations of Data Science", img: datascience },
 ];
 export const navLinks = [
   {

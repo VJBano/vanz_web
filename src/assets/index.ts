@@ -61,6 +61,7 @@ import CyberSecurity from "./certificate/cyber.webp";
 import UXdesign from "./certificate/UX.webp";
 import jiracourse from "./certificate/jira_course.webp";
 import dynamicInterfaces from "./certificate/dynamic_userinterfaces.webp";
+import datascience from "./certificate/data_science.webp";
 export {
   BANO,
   BANO1,
@@ -118,4 +119,5 @@ export {
   UXdesign,
   jiracourse,
   dynamicInterfaces,
+  datascience,
 };
