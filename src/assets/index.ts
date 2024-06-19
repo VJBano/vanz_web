@@ -62,6 +62,7 @@ import UXdesign from "./certificate/UX.webp";
 import jiracourse from "./certificate/jira_course.webp";
 import dynamicInterfaces from "./certificate/dynamic_userinterfaces.webp";
 import datascience from "./certificate/data_science.webp";
+import advanceDataAnalytics from "./certificate/advance_data_analytics.webp";
 export {
   BANO,
   BANO1,
@@ -120,4 +121,5 @@ export {
   jiracourse,
   dynamicInterfaces,
   datascience,
+  advanceDataAnalytics,
 };

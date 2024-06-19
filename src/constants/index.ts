@@ -40,6 +40,7 @@ import {
   jiracourse,
   dynamicInterfaces,
   datascience,
+  advanceDataAnalytics,
 } from "../assets";
 
 export const certificate = [
@@ -59,6 +60,10 @@ export const certificate = [
     img: dynamicInterfaces,
   },
   { title: "Foundations of Data Science", img: datascience },
+  {
+    title: "Google Advanced Data Analytics Capstone",
+    img: advanceDataAnalytics,
+  },
 ];
 export const navLinks = [
   {
