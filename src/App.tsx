@@ -1,12 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Spinner from "./components/spinner";
+import Navbar from "./components/Navbar"; // Load immediately - critical
+import Hero from "./components/Hero"; // Load immediately - critical
 
 const ABOUT = lazy(() => import("./components/About"));
 const CONTACT = lazy(() => import("./components/Contact"));
 const EXPERIENCE = lazy(() => import("./components/Experience"));
-const HERO = lazy(() => import("./components/Hero"));
-const NAVBAR = lazy(() => import("./components/Navbar"));
 const TECH = lazy(() => import("./components/Tech"));
 const PROJECT = lazy(() => import("./components/Projects"));
 const CERTIFICATE = lazy(() => import("./components/Certificate"));
@@ -18,8 +18,8 @@ const App = () => {
       <Suspense fallback={<Spinner />}>
         <div className="relative z-0 overflow-hidden">
           <div>
-            <NAVBAR />
-            <HERO />
+            <Navbar />
+            <Hero />
           </div>
 
           <div className="bg-about bg-cover bg-center bg-no-repeat">

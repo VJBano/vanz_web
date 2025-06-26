@@ -16,7 +16,6 @@ const Contact = () => {
   const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
   const EMAIL_KEY = import.meta.env.VITE_EMAIL_KEY;
 
-  console.log("Service Key:", EMAIL_KEY);
   const formRef = useRef(null);
   const [form, setForm] = useState({
     name: "",
