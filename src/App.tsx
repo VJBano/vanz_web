@@ -1,23 +1,22 @@
 import { BrowserRouter } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Spinner from "./components/spinner";
-import Footer from "./components/Footer";
 
+const ABOUT = lazy(() => import("./components/About"));
+const CONTACT = lazy(() => import("./components/Contact"));
+const EXPERIENCE = lazy(() => import("./components/Experience"));
+const HERO = lazy(() => import("./components/Hero"));
+const NAVBAR = lazy(() => import("./components/Navbar"));
+const TECH = lazy(() => import("./components/Tech"));
+const PROJECT = lazy(() => import("./components/Projects"));
+const CERTIFICATE = lazy(() => import("./components/Certificate"));
+const REVIEWS = lazy(() => import("./components/Reviews"));
+const FOOTER = lazy(() => import("./components/Footer"));
 const App = () => {
-  const ABOUT = lazy(() => import("./components/About"));
-  const CONTACT = lazy(() => import("./components/Contact"));
-  const EXPERIENCE = lazy(() => import("./components/Experience"));
-  const HERO = lazy(() => import("./components/Hero"));
-  const NAVBAR = lazy(() => import("./components/Navbar"));
-  const TECH = lazy(() => import("./components/Tech"));
-  const PROJECT = lazy(() => import("./components/Projects"));
-  const CERTIFICATE = lazy(() => import("./components/Certificate"));
-  const FOOTER = lazy(() => import("./components/Footer"));
-
   return (
     <BrowserRouter>
       <Suspense fallback={<Spinner />}>
-        <div className="relative z-0">
+        <div className="relative z-0 overflow-hidden">
           <div>
             <NAVBAR />
             <HERO />
@@ -36,6 +35,10 @@ const App = () => {
           </div>
 
           <PROJECT />
+
+          <div className="bg-about bg-cover bg-center bg-no-repeat">
+            <REVIEWS />
+          </div>
 
           <div
             className="bg-experience bg-cover bg-center bg-no-repeat 

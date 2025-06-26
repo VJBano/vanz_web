@@ -52,11 +52,11 @@ const Navbar = () => {
         </ul>
 
         {/* mobile */}
-        <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           {toggle ? (
             <div
-              className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${
+              className={`p-6 bg-flashWhite opacity-[0.98] fixed 
+                top-0 left-0 w-full h-full z-10 menu ${
                   toggle ? "menu-open" : "menu-close"
                 }`}
             >
@@ -76,17 +76,16 @@ const Navbar = () => {
                 /> */}
               </div>
               <ul
-                className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]"
+                className="list-none flex flex-col gap-6 
+                items-center justify-center h-full px-6"
               >
                 {navLinks.map((nav) => (
                   <li
-                    id={nav.id}
                     key={nav.id}
                     className={`${
-                      active === nav.title ? "text-french" : "text-eerieBlack"
-                    } text-[88px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
+                      active === nav.title ? "text-french" : "text-black"
+                    } text-[32px] font-medium font-arenq 
+                      uppercase tracking-[1px] cursor-pointer text-center`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);
@@ -98,14 +97,13 @@ const Navbar = () => {
               </ul>
             </div>
           ) : (
-
             <LazyLoadImage
-                  src={menu}
-                  alt="menu"
-                  className="w-[34px] h-[34px] object-contain cursor-pointer"
+              src={menu}
+              alt="menu"
+              className="w-[34px] h-[34px] object-contain cursor-pointer"
               onClick={() => setToggle(!toggle)}
-                  loading="lazy"
-                />
+              loading="lazy"
+            />
             // <img
             //   src={menu}
             //   alt="menu"

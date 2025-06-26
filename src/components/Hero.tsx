@@ -9,7 +9,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const Hero = () => {
   return (
     <>
-      <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
+      <div className="absolute top-0 left-0 z-0 h-[100vh] w-full">
         <LazyLoadImage
           src={bwmap}
           // width={600} height={400}
@@ -24,7 +24,7 @@ const Hero = () => {
           className="w-full h-full sm:block hidden object-cover"
         /> */}
       </div>
-      <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
+      <div className="absolute top-0 left-0 z-0 h-[100vh] w-full">
         <LazyLoadImage
           src={worldmap}
           alt="world map"
@@ -70,8 +70,9 @@ const Hero = () => {
             </p>
           </div>
           <div
-            className="w-screen flex flex-col items-start 
-            justify-center sm:-ml-[3rem] xxs:mt-4"></div>
+            className="w-full flex flex-col items-start 
+            justify-center sm:-ml-[3rem] xxs:mt-4"
+          ></div>
 
           <div></div>
         </div>

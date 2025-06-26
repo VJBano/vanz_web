@@ -75,6 +75,10 @@ export const navLinks = [
     title: "Projects",
   },
   {
+    id: "reviews",
+    title: "Reviews",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -304,4 +308,21 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+// Client Reviews Data
+const reviews = [
+  {
+    id: "review-1",
+    name: "Nick Pridachin ",
+    position: "Co-Founder at Digital Octane",
+    avatar:
+      "https://media.licdn.com/dms/image/v2/C5603AQECdUR9InjX6g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659130413427?e=1756339200&v=beta&t=Zlolmk7870nhHHRoB7w_UxinszILQ_7DjTDeu1IGHTc",
+    rating: 5,
+    testimonial: `As the CTO, I had the pleasure of working closely with Vincent on several key projects. Throughout our collaboration, Vincent demonstrated strong technical skills, particularly in writing Python scripts and developing a React interface. His work was consistently delivered on time and met the high-quality standards we set for our team.
+
+Vincent’s ability to understand complex requirements and translate them into effective solutions was evident in every task he undertook. His programming skills are solid, and his proactive approach ensured that all deliverables were completed efficiently.
+
+Overall, Vincent is a reliable and skilled programmer who has been a valuable asset to our team.`,
+  },
+];
+
+export { services, technologies, experiences, projects, reviews };

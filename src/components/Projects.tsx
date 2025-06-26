@@ -20,6 +20,26 @@ const ProjectCard = ({
   handleClick,
 }) => {
   const [loading, setLoading] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
+
+  // Lazy loading for icons with dynamic imports
+  const [githubIcon, setGithubIcon] = useState(null);
+  const [pineappleIcon, setPineappleIcon] = useState(null);
+  const [pineappleHoverIcon, setPineappleHoverIcon] = useState(null);
+
+  // Load icons only when needed
+  React.useEffect(() => {
+    if (active === id) {
+      import("../assets").then((icons) => {
+        setGithubIcon(icons.github);
+      });
+
+      import("../assets").then((icons) => {
+        setPineappleIcon(icons.pineapple);
+        setPineappleHoverIcon(icons.pineappleHover);
+      });
+    }
+  }, [active, id]);
 
   const handleLoad = () => {
     setLoading(false);

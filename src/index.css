@@ -1,48 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Arenq';
-  src: url('./fonts/arenq.otf');
+  font-family: "Arenq";
+  src: url("./fonts/arenq.otf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Mova';
-  src: url('./fonts/mova.otf');
+  font-family: "Mova";
+  src: url("./fonts/mova.otf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Beckman';
-  src: url('./fonts/beckman.otf');
+  font-family: "Beckman";
+  src: url("./fonts/beckman.otf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Overcame Bold';
-  src: url('./fonts/overcame-bold.woff');
+  font-family: "Overcame Bold";
+  src: url("./fonts/overcame-bold.woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: RobotoRegular;
-  src: url('./assets/fonts/Roboto-Regular.ttf');
+  src: url("./assets/fonts/Roboto-Regular.ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: RobotoMedium;
-  src: url('./assets/fonts/Roboto-Medium.ttf');
+  src: url("./assets/fonts/Roboto-Medium.ttf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Overcame Outline';
-  src: url('./fonts/overcame-outline.woff');
+  font-family: "Overcame Outline";
+  src: url("./fonts/overcame-outline.woff");
   font-display: swap;
 }
 
@@ -54,8 +54,18 @@
   color-scheme: dark;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
 .nav-links::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 3px;
@@ -85,7 +95,7 @@
 }
 
 .hero-heading {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
