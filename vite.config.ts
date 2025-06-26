@@ -26,7 +26,7 @@ export default defineConfig({
   server: {
     host: true,
   },
-  base: "/vanz_web/",
+  base: "/",
   build: {
     chunkSizeWarningLimit: 1000, // Set the limit to 1000 kB
   },
