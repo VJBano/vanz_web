@@ -23,6 +23,41 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Generate sitemap
+        run: |
+          echo "<?xml version='1.0' encoding='UTF-8'?>
+          <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+            <url>
+              <loc>https://vjbano.me/</loc>
+              <lastmod>$(date -Iseconds)</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          </urlset>" > dist/sitemap.xml
+
+      - name: Create robots.txt
+        run: |
+          echo "User-agent: *
+          Allow: /
+          Sitemap: https://vjbano.me/sitemap.xml" > dist/robots.txt
+
+      - name: Add CNAME
+        run: echo "vjbano.me" > dist/CNAME
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          cname: vjbano.me
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
         env:
           VITE_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
           VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}

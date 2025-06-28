@@ -57,9 +57,32 @@
     }
     </script>
     
-    <!-- Additional Performance & SEO -->
-    <link rel="preconnect" href="https://res.cloudinary.com">
+    <!-- Critical Performance Optimizations -->
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
     <link rel="dns-prefetch" href="https://res.cloudinary.com">
+    <link rel="dns-prefetch" href="https://vjbano.me">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/src/main.tsx" as="script" crossorigin>
+    <link rel="preload" href="/src/index.css" as="style">
+    <link rel="modulepreload" href="/src/main.tsx">
+    
+    <!-- Prefetch likely resources -->
+    <link rel="prefetch" href="https://res.cloudinary.com/dcryg5uws/image/upload/v1751040362/vincent_b7bst4.webp">
+    
+    <!-- Performance hints for GitHub Pages -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Non-blocking Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"></noscript>
+    
+    <!-- Additional Performance & SEO -->
     <meta name="theme-color" content="#000000">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="format-detection" content="telephone=no">

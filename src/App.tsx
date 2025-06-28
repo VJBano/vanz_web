@@ -4,14 +4,59 @@ import Spinner from "./components/spinner";
 import Navbar from "./components/Navbar"; // Load immediately - critical
 import Hero from "./components/Hero"; // Load immediately - critical
 
-const ABOUT = lazy(() => import("./components/About"));
-const CONTACT = lazy(() => import("./components/Contact"));
-const EXPERIENCE = lazy(() => import("./components/Experience"));
-const TECH = lazy(() => import("./components/Tech"));
-const PROJECT = lazy(() => import("./components/Projects"));
-const CERTIFICATE = lazy(() => import("./components/Certificate"));
-const REVIEWS = lazy(() => import("./components/Reviews"));
+// Lazy load components with prefetch hints
+const ABOUT = lazy(() => 
+  import("./components/About").then(module => {
+    // Prefetch next likely component
+    import("./components/Tech");
+    return module;
+  })
+);
+
+const TECH = lazy(() => 
+  import("./components/Tech").then(module => {
+    import("./components/Certificate");
+    return module;
+  })
+);
+
+const CERTIFICATE = lazy(() => 
+  import("./components/Certificate").then(module => {
+    import("./components/Projects");
+    return module;
+  })
+);
+
+const PROJECT = lazy(() => 
+  import("./components/Projects").then(module => {
+    import("./components/Reviews");
+    return module;
+  })
+);
+
+const REVIEWS = lazy(() => 
+  import("./components/Reviews").then(module => {
+    import("./components/Experience");
+    return module;
+  })
+);
+
+const EXPERIENCE = lazy(() => 
+  import("./components/Experience").then(module => {
+    import("./components/Contact");
+    return module;
+  })
+);
+
+const CONTACT = lazy(() => 
+  import("./components/Contact").then(module => {
+    import("./components/Footer");
+    return module;
+  })
+);
+
 const FOOTER = lazy(() => import("./components/Footer"));
+
 const App = () => {
   return (
     <BrowserRouter>
