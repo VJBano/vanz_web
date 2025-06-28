@@ -1,8 +1,6 @@
-import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 
-import { vincent, bwmap, worldmap } from "../assets";
+// import { vincent, bwmap, worldmap } from "../assets";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -11,7 +9,7 @@ const Hero = () => {
     <>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-full">
         <LazyLoadImage
-          src={bwmap}
+          src="https://res.cloudinary.com/dcryg5uws/image/upload/v1751040604/bw-map_wezghs.jpg"
           // width={600} height={400}
           loading="lazy"
           alt="world map"
@@ -26,7 +24,7 @@ const Hero = () => {
       </div>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-full">
         <LazyLoadImage
-          src={worldmap}
+          src="https://res.cloudinary.com/dcryg5uws/image/upload/v1751040681/world-map_v1pc9h.png"
           alt="world map"
           className="w-full h-full sm:hidden block object-cover"
           loading="lazy"
@@ -40,6 +38,8 @@ const Hero = () => {
       <section
         className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
         sm:bg-hero bg-hero-mobile overflow-hidden"
+        role="banner"
+        aria-label="Hero section introducing Vincent Jay Bano"
       >
         <div
           className={`absolute inset-0 sm:top-[250px] top-[150px]
@@ -47,12 +47,15 @@ const Hero = () => {
           max-w-7xl mx-auto flex flex-row items-start
           justify-between gap-3`}
         >
-          <div className="flex flex-col justify-center items-center mt-5 ml-3">
+          <div
+            className="flex flex-col justify-center items-center mt-5 ml-3"
+            aria-hidden="true"
+          >
             <div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
             <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
           </div>
 
-          <div>
+          <header>
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase flex flex-col `}
             >
@@ -66,9 +69,10 @@ const Hero = () => {
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              FullStack Web Developer. <br className="sm:block hidden" />
+              Software Engineer
+              <br className="sm:block hidden" />
             </p>
-          </div>
+          </header>
           <div
             className="w-full flex flex-col items-start 
             justify-center sm:-ml-[3rem] xxs:mt-4"
@@ -81,7 +85,11 @@ const Hero = () => {
           className="absolute xs:bottom-10 bottom-32 w-full 
           flex justify-center items-center"
         >
-          <a href="#about">
+          <a
+            href="#about"
+            aria-label="Scroll down to about section"
+            className="focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full"
+          >
             {/* <div
               className="w-[35px] h-[64px] rounded-3xl border-4 
              border-dim flex
@@ -124,11 +132,11 @@ const Hero = () => {
         </div>
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
-        <div>
+        <aside aria-label="Vincent Jay Bano profile image">
           <LazyLoadImage
-            src={vincent}
+            src="https://res.cloudinary.com/dcryg5uws/image/upload/v1751040362/vincent_b7bst4.webp"
             // width={600} height={400}
-            alt="vincent"
+            alt="Vincent Jay Bano - Full Stack Software Engineer"
             className="absolute bottom-0 ml-[50vw] 
         lg:ml-[65vw] md:ml-[60vw] xmd:ml-[50vw] 2xl:ml-[73vw]
         sm:h-[0vh] md:h-[70vh] xl:h-[80vh]"
@@ -141,7 +149,7 @@ const Hero = () => {
             src={vincent}
             alt="vincent"
           /> */}
-        </div>
+        </aside>
       </section>
     </>
   );

@@ -10,7 +10,6 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { download, downloadHover, resume } from "../assets";
 import { textVariant } from "../utils/motion";
 import resumePDF from "../assets/resume/resume-updated-2023.pdf";
 
@@ -71,8 +70,7 @@ const Experience = () => {
   };
 
   const ResumeDownload = () => {
-
-    alert("To download my resume, contact me first.")
+    alert("To download my resume, contact me first.");
     // const link = document.createElement("a");
     // link.href = resumePDF;
     // link.download = "resume-updated-2023.pdf";
@@ -112,7 +110,7 @@ const Experience = () => {
             icon={
               <div className="flex justify-center items-center w-full h-full">
                 <LazyLoadImage
-                  src={resume}
+                  src="https://res.cloudinary.com/dcryg5uws/image/upload/v1751076557/resume_weaelp.png"
                   alt="resume"
                   className="w-[45%] h-[45%] object-contain"
                   loading="lazy"
@@ -140,7 +138,11 @@ const Experience = () => {
             >
               MY RESUME
               <LazyLoadImage
-                src={isHovered ? download : downloadHover}
+                src={
+                  isHovered
+                    ? "https://res.cloudinary.com/dcryg5uws/image/upload/v1751076557/download_hg9a1d.png"
+                    : "https://res.cloudinary.com/dcryg5uws/image/upload/v1751076557/downloadHover_dltykj.png"
+                }
                 alt="download"
                 className="download-btn sm:w-[26px] sm:h-[26px] 
                 w-[23px] h-[23px] object-contain"

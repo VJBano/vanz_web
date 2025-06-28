@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import { github, pineapple, pineappleHover } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -23,23 +22,8 @@ const ProjectCard = ({
   const [isHovered, setIsHovered] = useState(false);
 
   // Lazy loading for icons with dynamic imports
-  const [githubIcon, setGithubIcon] = useState(null);
-  const [pineappleIcon, setPineappleIcon] = useState(null);
-  const [pineappleHoverIcon, setPineappleHoverIcon] = useState(null);
 
   // Load icons only when needed
-  React.useEffect(() => {
-    if (active === id) {
-      import("../assets").then((icons) => {
-        setGithubIcon(icons.github);
-      });
-
-      import("../assets").then((icons) => {
-        setPineappleIcon(icons.pineapple);
-        setPineappleHoverIcon(icons.pineappleHover);
-      });
-    }
-  }, [active, id]);
 
   const handleLoad = () => {
     setLoading(false);
@@ -105,7 +89,7 @@ const ProjectCard = ({
                 /> */}
 
                 <LazyLoadImage
-                  src={github}
+                  src="https://res.cloudinary.com/dcryg5uws/image/upload/v1751077212/github_rl64gq.png"
                   alt="source code"
                   className="w-4/5 h-4/5 object-contain"
                   loading="lazy"
@@ -139,16 +123,24 @@ const ProjectCard = ({
               onMouseOver={() => {
                 document
                   .querySelector(".btn-icon")
-                  .setAttribute("src", pineappleHover);
+                  .setAttribute(
+                    "src",
+                    "https://res.cloudinary.com/dcryg5uws/image/upload/v1751077213/pineappleHover_ysqqgw.png"
+                  );
               }}
               onMouseOut={() => {
                 document
                   .querySelector(".btn-icon")
-                  .setAttribute("src", pineapple);
+                  .setAttribute(
+                    "src",
+                    "https://res.cloudinary.com/dcryg5uws/image/upload/v1751077213/pineapple_tzgmti.png"
+                  );
               }}
             >
               <LazyLoadImage
-                src={pineapple}
+                src={
+                  "https://res.cloudinary.com/dcryg5uws/image/upload/v1751077213/pineapple_tzgmti.png"
+                }
                 alt="pineapple"
                 className="btn-icon sm:w-[34px] sm:h-[34px] 
                    w-[30px] h-[30px] object-contain"

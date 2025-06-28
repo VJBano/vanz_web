@@ -1,11 +1,11 @@
-import React, { Suspense, useState } from "react";
+import React, { useState } from "react";
 import { certificate } from "../constants";
 import { motion } from "framer-motion";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import { fadeIn, textVariant } from "../utils/motion";
+
+import { fadeIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import Spinner from "./spinner";
+
 import ImageLoader from "./ImageLoader";
 
 const CertificateCard = ({ index, title, img }: any) => {

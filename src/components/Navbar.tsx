@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { close, menu, logo } from "../assets";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Navbar = () => {
@@ -24,7 +23,7 @@ const Navbar = () => {
           }}
         >
           <LazyLoadImage
-            src={logo}
+            src="https://res.cloudinary.com/dcryg5uws/image/upload/v1751076971/logo-black_x4gies.png"
             alt="logo"
             className="sm:w-[60px] sm:h-[60px] w-[55px] h-[55px] object-contain"
             loading="lazy"
@@ -62,7 +61,7 @@ const Navbar = () => {
             >
               <div className="flex justify-end">
                 <LazyLoadImage
-                  src={close}
+                  src="https://res.cloudinary.com/dcryg5uws/image/upload/v1751076946/close_uorf2j.png"
                   alt="close"
                   className="w-[22px] h-[22px] object-contain cursor-pointer"
                   onClick={() => setToggle(!toggle)}
@@ -98,7 +97,7 @@ const Navbar = () => {
             </div>
           ) : (
             <LazyLoadImage
-              src={menu}
+              src="https://res.cloudinary.com/dcryg5uws/image/upload/v1751076946/menu_ojthvj.png"
               alt="menu"
               className="w-[34px] h-[34px] object-contain cursor-pointer"
               onClick={() => setToggle(!toggle)}

@@ -1,68 +1,87 @@
-import {
-  frontend,
-  backend,
-  ux,
-  prototyping,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  git,
-  figma,
-  docker,
-  postgresql,
-  express,
-  mysql,
-  quiz_app,
-  vijaya,
-  sourceum,
-  qrcode,
-  pos,
-  go,
-  BANO,
-  BANO1,
-  BANO2,
-  BANO3,
-  BANO4,
-  BANO6,
-  UDEMY,
-  SKILLUP1,
-  SKILLUP2,
-  ems,
-  dms,
-  freelance,
-  CyberSecurity,
-  UXdesign,
-  jiracourse,
-  dynamicInterfaces,
-  datascience,
-  advanceDataAnalytics,
-} from "../assets";
+import // frontend,
+// backend,
+// ux,
+// prototyping,
+// javascript,
+// typescript,
+// html,
+// css,
+// reactjs,
+// tailwind,
+// nodejs,
+// git,
+// figma,
+// docker,
+// postgresql,
+// express,
+// mysql,
+// quiz_app,
+// vijaya,
+// sourceum,
+// qrcode,
+// pos,
+// go,
+// ems,
+// dms,
+// freelance,
+"../assets";
 
 export const certificate = [
-  { title: "Industry Base Web Development", img: BANO },
-  { title: "Android:Working On Database", img: BANO1 },
-  { title: "Database Normalization & SQL JOIN Queries", img: BANO2 },
-  { title: "Intro to UX Design", img: BANO3 },
-  { title: "IoT and Embedded System Development", img: BANO4 },
-  { title: "Introduction to Data Analytics", img: SKILLUP1 },
-  { title: "Agile Scrum Foundation", img: SKILLUP2 },
-  { title: "Building Modern Web Applications with Go", img: UDEMY },
-  { title: "Foundations of Cybersecurity", img: CyberSecurity },
-  { title: "Foundations of User Experience (UX) Design", img: UXdesign },
-  { title: "Automate tasks and processes with Jira", img: jiracourse },
+  {
+    title: "Industry Base Web Development",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074184/BANO_yfyawn.webp",
+  },
+  {
+    title: "Android:Working On Database",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074339/BANO-6_a6pqgy.webp",
+  },
+  {
+    title: "Database Normalization & SQL JOIN Queries",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074338/BANO-2_t3zmne.webp",
+  },
+  {
+    title: "Intro to UX Design",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074339/BANO-3_njbdja.webp",
+  },
+  {
+    title: "IoT and Embedded System Development",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074340/BANO-4_wacxjl.webp",
+  },
+  {
+    title: "Introduction to Data Analytics",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074342/skillUP_ggox4p.webp",
+  },
+  {
+    title: "Agile Scrum Foundation",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074343/SkillUP-2_iii589.webp",
+  },
+  {
+    title: "Building Modern Web Applications with Go",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074344/udemy_k8cwdk.webp",
+  },
+  {
+    title: "Foundations of Cybersecurity",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074342/cyber_vkevf2.png",
+  },
+  {
+    title: "Foundations of User Experience (UX) Design",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074348/UX_h7sr6l.png",
+  },
+  {
+    title: "Automate tasks and processes with Jira",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074347/jira_course_w1deq7.png",
+  },
   {
     title: "Dynamic User Interfaces (UI) for Websites",
-    img: dynamicInterfaces,
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074346/dynamic_userinterfaces_zs1pcb.png",
   },
-  { title: "Foundations of Data Science", img: datascience },
+  {
+    title: "Foundations of Data Science",
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074345/data_science_pmg17u.png",
+  },
   {
     title: "Google Advanced Data Analytics Capstone",
-    img: advanceDataAnalytics,
+    img: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751074337/advance_data_analytics_los2vc.png",
   },
 ];
 export const navLinks = [
@@ -87,42 +106,42 @@ export const navLinks = [
 const services = [
   {
     title: "Frontend Developer",
-    icon: frontend,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075000/frontend_tdcmap.png",
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075000/backend_ytuggh.png",
   },
   {
     title: "UI/UX Design",
-    icon: ux,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075000/ux_pm2ups.png",
   },
   {
     title: "Software Prototyping",
-    icon: prototyping,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075000/prototyping_cjh7jn.png",
   },
 ];
 
 const technologies = [
   {
     name: "HTML 5",
-    icon: html,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075493/html_wkzoqp.png",
   },
   {
     name: "CSS 3",
-    icon: css,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075492/css_whnksj.png",
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075493/javascript_f8ibyp.png",
   },
   {
     name: "TypeScript",
-    icon: typescript,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075503/typescript_nfdnsa.png",
   },
   {
     name: "React JS",
-    icon: reactjs,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075498/reactjs_xxyyc3.png",
   },
   // {
   //   name: "Redux Toolkit",
@@ -130,19 +149,19 @@ const technologies = [
   // },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075502/tailwind_nydxz1.png",
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075497/nodejs_uxwphd.png",
   },
   {
     name: "postgresql",
-    icon: postgresql,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075498/postgresql_ejfjn0.png",
   },
   {
     name: "git",
-    icon: git,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075492/git_lejmqt.png",
   },
   // {
   //   name: "figma",
@@ -150,19 +169,19 @@ const technologies = [
   // },
   {
     name: "docker",
-    icon: docker,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075492/docker_s4rsod.png",
   },
   {
     name: "Express",
-    icon: express,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075492/express_igzpp0.png",
   },
   {
     name: "MySQL",
-    icon: mysql,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075493/mysql_gfuk1w.png",
   },
   {
     name: "GoLang",
-    icon: go,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075493/go_xteghz.png",
   },
 ];
 
@@ -170,21 +189,21 @@ const experiences = [
   {
     title: "Freelancer",
     company_name: "",
-    icon: freelance,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751076094/freelance_rev8c9.png",
     iconBg: "#333333",
     date: "Aug 2023 - Present",
   },
   {
     title: "Junior Software Engineer",
     company_name: "Vijaya Technologies Inc",
-    icon: vijaya,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751076094/vijaya_zp4njz.png",
     iconBg: "#333333",
     date: "Jul 2022 - Aug 2023",
   },
   {
     title: "Research Assistant",
     company_name: "Sourceum Research",
-    icon: sourceum,
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751076094/sourceum_pcpgu4.png",
     iconBg: "#333333",
     date: "Nov 2021 - Aug 2022",
   },
@@ -210,7 +229,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: quiz_app,
+    image:
+      "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075849/quiz_app_tvhoe6.jpg",
     repo: "https://vjbano.github.io/quiz_app/",
     demo: "https://vjbano.github.io/quiz_app/",
   },
@@ -234,7 +254,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: qrcode,
+    image:
+      "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075849/qrcode_tcw345.png",
     repo: "https://vjbano.github.io/QRCode-Generator/",
     demo: "https://vjbano.github.io/QRCode-Generator/",
   },
@@ -257,7 +278,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: pos,
+    image:
+      "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075849/POS_mwcmj9.png",
     repo: "https://github.com/VJBano/POS",
     demo: "https://github.com/VJBano/POS",
   },
@@ -279,7 +301,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: ems,
+    image:
+      "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075848/EMS_xixgj4.webp",
     repo: "https://github.com/VJBano/Enrollment-Management-System",
     demo: "https://github.com/VJBano/Enrollment-Management-System",
   },
@@ -302,7 +325,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: dms,
+    image:
+      "https://res.cloudinary.com/dcryg5uws/image/upload/v1751075848/DMS_oy0ebg.webp",
     repo: "https://github.com/VJBano/DOCS_MS",
     demo: "https://github.com/VJBano/DOCS_MS",
   },

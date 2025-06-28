@@ -7,7 +7,6 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { send, sendHover } from "../assets";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // eslint-disable-next-line react-refresh/only-export-components
@@ -180,7 +179,11 @@ const Contact = () => {
             {loading ? "Sending" : "Send"}
 
             <LazyLoadImage
-              src={isHovered ? sendHover : send}
+              src={
+                isHovered
+                  ? "https://res.cloudinary.com/dcryg5uws/image/upload/v1751076398/sendHover_czzwyx.png"
+                  : "https://res.cloudinary.com/dcryg5uws/image/upload/v1751076398/send_jsvlkp.png"
+              }
               alt="send"
               className="contact-btn sm:w-[26px] sm:h-[26px] 
                 w-[23px] h-[23px] object-contain"
