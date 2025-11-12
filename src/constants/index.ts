@@ -187,6 +187,20 @@ const technologies = [
 
 const experiences = [
   {
+    title: "DevOps",
+    company_name: "Token Of Trust",
+    icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1762966336/token_of_trust_logo_mkstwh.jpg",
+    iconBg: "#333333",
+    date: "Feb 2025 - Present",
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Jaya Solutions OPC",
+    icon: "https://i0.wp.com/jayasolutions.dev/wp-content/uploads/2023/05/Submark-small.png?w=600&ssl=1",
+    iconBg: "#333333",
+    date: "Jan 2024 - Present",
+  },
+  {
     title: "Freelancer",
     company_name: "",
     icon: "https://res.cloudinary.com/dcryg5uws/image/upload/v1751076094/freelance_rev8c9.png",

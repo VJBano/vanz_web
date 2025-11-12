@@ -52,18 +52,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px] font-RobotoRegular flex flex-col"
       >
-        Hello! I'm Vincent Jay Bano, a dedicated FullStack Web Developer. I
-        proudly hold a degree in Bachelor of Science in Computer Science from
-        Bohol Island State University - Candijay Campus. I find joy in taking on
+        Hello! I'm Vincent Jay Bano, a dedicated Software Engineer. I proudly
+        hold a degree in Bachelor of Science in Computer Science from Bohol
+        Island State University - Candijay Campus. I find joy in taking on
         challenging problems and uncovering simple yet elegant solutions.
         Programming and coding are not just tasks for me; they are a passion.
         Whether it's JavaScript, Go, PHP, TypeScript, or more, I enjoy the art
         of turning code into functional and beautiful solutions. My belief is
         simple: every problem has a solution, and it's often accompanied by a
         satisfying result. This belief has driven me to embrace the role of a
-        programmer and strive to be an efficient FullStack Web Developer. My
-        journey includes a blend of training and hands-on experiences, both past
-        and ongoing, that continually shape my skills.
+        programmer and strive to be an efficient Software Engineer. My journey
+        includes a blend of training and hands-on experiences, both past and
+        ongoing, that continually shape my skills.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
