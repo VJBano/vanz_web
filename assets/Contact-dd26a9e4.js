@@ -1,0 +1,18 @@
+import{j as e,s as x}from"./index-5b19132d.js";import{a as t}from"./vendor-7dae7438.js";import{e as v}from"./utils-34eb3db1.js";import{S as j,a as E}from"./SectionWrapper-f95d97bc.js";import{b as N}from"./components-c2c60774.js";import{m as w}from"./animations-e9baa797.js";const I=()=>{const s={}.VITE_SERVICE_ID,o={}.VITE_TEMPLATE_ID,l={}.VITE_EMAIL_KEY,p=t.useRef(null),[a,c]=t.useState({name:"",email:"",message:""}),[u,n]=t.useState(!1),[f,d]=t.useState(!1),g=()=>{d(!0)},h=()=>{d(!1)},r=m=>{const{name:i,value:y}=m.target;c({...a,[i]:y})},b=m=>{if(m.preventDefault(),n(!0),a.email==""||a.message==""||a.name==""){alert("Provide All Information"),n(!1);return}if(!s||!o||!l){alert("Configuration error. Please try again later."),n(!1),console.error("Missing environment variables:",{SERVICE_ID:s,TEMPLATE_ID:o,EMAIL_KEY:l});return}v.send(s,o,{from_name:a.name,to_name:"Vincent Jay Bano",from_email:a.email,to_email:"vincentjaybano45@gmail.com",message:a.message},l).then(()=>{n(!1),alert("Thank you. I will get back to you as soon as possible."),c({name:"",email:"",message:""})},i=>{n(!1),console.log(i),alert("Something went wrong. Please try again.")})};return e.jsx("div",{className:`-mt-[8rem] xl:flex-row flex-col-reverse 
+      flex gap-5 overflow-hidden`,children:e.jsxs(w.div,{variants:E("left","tween",.2,1),className:"flex-[100] bg-jet p-8 rounded-2xl",children:[e.jsx("p",{className:x.sectionSubText,children:"Get in touch"}),e.jsx("h3",{className:x.sectionHeadTextLight,children:"Contact."}),e.jsxs("form",{ref:p,onSubmit:b,className:"mt-10 flex flex-col gap-6 font-poppins",children:[e.jsxs("label",{className:"flex flex-col",children:[e.jsx("span",{className:"text-timberWolf font-medium mb-4",children:"Your Name"}),e.jsx("input",{type:"text",name:"name",value:a.name,onChange:r,placeholder:"What's your name?",className:`bg-eerieBlack py-4 px-6
+              placeholder:text-taupe
+              text-timberWolf rounded-lg outline-none
+              border-none font-medium`})]}),e.jsxs("label",{className:"flex flex-col",children:[e.jsx("span",{className:"text-timberWolf font-medium mb-4",children:"Your Email"}),e.jsx("input",{type:"email",name:"email",value:a.email,onChange:r,placeholder:"What's your email?",className:`bg-eerieBlack py-4 px-6
+              placeholder:text-taupe
+              text-timberWolf rounded-lg outline-none
+              border-none font-medium`})]}),e.jsxs("label",{className:"flex flex-col",children:[e.jsx("span",{className:"text-timberWolf font-medium mb-4",children:"Your Message"}),e.jsx("textarea",{rows:7,name:"message",value:a.message,onChange:r,placeholder:"What's your message?",className:`bg-eerieBlack py-4 px-6
+              placeholder:text-taupe
+              text-timberWolf rounded-lg outline-none
+              border-none font-medium resize-none`})]}),e.jsxs("button",{type:"submit",className:`live-demo flex justify-center sm:gap-4 
+            gap-3 sm:text-[20px] text-[16px] text-timberWolf 
+            font-bold font-beckman items-center py-5
+            whitespace-nowrap sm:w-[130px] sm:h-[50px] 
+            w-[100px] h-[45px] rounded-[10px] bg-night 
+            hover:bg-battleGray hover:text-eerieBlack 
+            transition duration-[0.2s] ease-in-out`,onMouseOver:g,onMouseOut:h,children:[u?"Sending":"Send",e.jsx(N.LazyLoadImage,{src:f?"https://res.cloudinary.com/dcryg5uws/image/upload/v1751076398/sendHover_czzwyx.png":"https://res.cloudinary.com/dcryg5uws/image/upload/v1751076398/send_jsvlkp.png",alt:"send",className:`contact-btn sm:w-[26px] sm:h-[26px] 
+                w-[23px] h-[23px] object-contain`,loading:"lazy"})]})]})]})})},k=j(I,"contact");export{k as default};
